@@ -1,0 +1,6 @@
+grafana:
+  dashboardJSON: '{"a default dashboard JSON here"}'
+prometheus:
+  env: staging
+  additionalScrapeConfigs: |
+    - job_name: 'default'

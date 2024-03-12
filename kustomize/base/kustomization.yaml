@@ -1,0 +1,3 @@
+resources:
+  - ../../helm-charts/observability/templates/grafana-configmap.yaml
+  - ../../helm-charts/observability/templates/prometheus-configmap.yaml

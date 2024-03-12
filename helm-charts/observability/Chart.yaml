@@ -1,0 +1,4 @@
+apiVersion: v2
+name: observability
+description: A Helm chart for Kubernetes observability components
+version: 0.1.0

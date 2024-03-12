@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+    {{- if eq .Values.prometheus.env "prod" }}
+    scrape_configs:
+      {{ .Values.prometheus.additionalScrapeConfigs }}
+    {{- end }}

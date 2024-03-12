@@ -1,0 +1,10 @@
+resources:
+  - ../../../base
+patchesStrategicMerge:
+  - grafana-patch.yaml
+  - prometheus-patch.yaml
+configMapGenerator:
+  - name: env-config
+    literals:
+      - env=prod
+      - namespace=ns1
